@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Golu 🎉</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ffe6f2, #cce7ff);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    div {
+      margin-top: 20px;
+      font-size: 28px;
+      color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+<h1>3️⃣ 2️⃣ 1️⃣</h1>
+<button onclick="start()">🎁 Tap to Start Surprise</button>
+
+<div id="cake" style="display:none;">🎂 Cake is here!</div>
+<div id="candle" style="display:none;">🕯️ Candle is lit!</div>
+<div id="msg" style="display:none;">❤️ Happy Birthday Golu! Tum meri zindagi ka sabse pyara gift ho 🤍</div>
+
+<script>
+function start(){
+  document.getElementById("cake").style.display = "block";
+  setTimeout(function(){
+    document.getElementById("candle").style.display = "block";
+  }, 2000);
+  setTimeout(function(){
+    document.getElementById("msg").style.display = "block";
+  }, 4000);
+}
+</script>
+
+</body>
+</html>
